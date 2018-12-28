@@ -204,7 +204,7 @@ router.post('/register', function(req, res) {
                 age: req.body.age
             }
             dbusers.create(details).then(function() {
-                req.session = details;
+                req.session.name = details;
             })
 
         })

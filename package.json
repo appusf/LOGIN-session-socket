@@ -1,0 +1,34 @@
+{
+  "name": "login-session-socket",
+  "version": "1.0.0",
+  "description": "Login using session and socket",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hafees",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.0",
+    "cookie-parser": "^1.4.3",
+    "cron": "^1.6.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "jsonwebtoken": "^8.4.0",
+    "mailgun-js": "^0.22.0",
+    "mysql2": "^1.6.4",
+    "node-cron": "^2.0.3",
+    "node-schedule": "^1.3.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "sendgrid": "^5.2.3",
+    "sequelize": "^4.41.2"
+  }
+}

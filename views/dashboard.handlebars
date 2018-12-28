@@ -1,0 +1,177 @@
+
+    <script src="/js/jquery.min.js"></script>
+    <link href="http://www.binarytheme.com/BTlivedemos/2014/08/29/horizontal-admin/assets/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+
+
+    <!-- CUSTOM STYLE  -->
+    <link href="/css/dashcss.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+    <div class="navbar navbar-inverse set-radius-zero" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/dashboard">
+
+                    <img src="/img/logo.png" />
+                </a>
+
+            </div>
+
+            <div class="right-div">
+                <a href="/logout" class="btn btn-danger pull-right">LOG ME OUT</a>
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     <!-- MENU SECTION END-->
+    <div class="content-wrapper" id="mainbg">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">ADMIN DASHBOARD , Hi {{name.name}}</h4>
+                <input type="hidden" id="usernamee" type="text" value="{{name.username}}">
+
+                
+                            </div>
+
+        </div>
+             
+             <div class="row">
+            
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-info back-widget-set text-center">
+                            <i class="fas fa-user"></i>
+                            <h3>Username </h3>
+                           {{name.username}}
+                        </div>
+                    </div>
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-success back-widget-set text-center">
+                            <i class="far fa-address-card"></i>
+                            <h3>Place </h3>
+                             {{name.place}}
+                        </div>
+                    </div>
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-warning back-widget-set text-center">
+                            <i class="fas fa-envelope"></i>
+                            <h3> E-mail </h3>
+                          {{name.email}}
+                        </div>
+                    </div>
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-danger back-widget-set text-center">
+                            <i class="fab fa-buysellads"></i>
+                            <h3>Age  </h3>
+                             {{name.age}}
+                        </div>
+                    </div>
+
+        </div>  
+        <br><br>            
+            <hr>
+            
+
+             <div class="row">
+
+                 {{!-- <div class="col-md-4 col-sm-4 col-xs-12">
+ <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Wallpapers
+                        </div>
+                        <div class="panel-body text-center recent-users-sec">
+<img class="img-thumbnail" src="/img/user.gif" />
+                            <img class="img-thumbnail" src="/img/user2.png" />
+                            <img class="img-thumbnail" src="/img/user.gif" />
+                            <img class="img-thumbnail" src="/img/user2.png" />
+                            <img class="img-thumbnail" src="/img/user.gif" />
+                               <img class="img-thumbnail" src="/img/user2.png" />
+                            <img class="img-thumbnail" src="/img/user.gif" />
+                            <img class="img-thumbnail" src="/img/user2.png" />
+                            <img class="img-thumbnail" src="/img/user.gif" />
+                        </div>
+     </div>
+             </div> --}}
+             <br>
+                  <div class="col-md-8 col-sm-8 col-xs-12">
+                      <div class="panel panel-success">
+                        <div class="panel-heading">
+                           Log Table Of {{name.name}}
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                               <table id="myTable" class="table table-striped table-bordered">
+    <thead>
+<tr>
+    {{!-- <th>Id </th> --}}
+    <th>User</th>
+    <th>Name</th>
+    <th>Logged In date</th>
+    <th>Logged in time</th>
+    
+    
+    
+</tr>
+    </thead>
+    
+</table>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+             
+             </div>
+             
+            
+
+    </div>
+    </div>
+     <!-- CONTENT-WRAPPER SECTION END-->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   &copy; 2018 Synigence.ae |<a href="http://www.synigence.ae/" target="_blank"  > Designed by : Muhammad Hafees</a> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+   
+    <script src="/js/dashjs.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58127580-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
